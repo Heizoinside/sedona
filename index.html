@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item"><a href="index.html" class="active">Информация</a></li>
+            <li class="main-navigation-item"><a href="#">Фото и видео</a></li>
+            <li class="main-navigation-logo">
+              <img src="img/logo.png" alt="Логотип штата "Сетона"">
+            </li>
+            <li class="main-navigation-item"><a href="map.html">Карта штата</a></li>
+            <li class="main-navigation-item"><a href="" >Гостинницы</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="welcome">
+        <img src="" alt="" height="360px" width="470px">
+      </div>
+      <header class="caption">
+        <h1 class="caption-header">Седона — небольшой городок в аризоне,  заслуживающий большего!</h1>
+        <p class="caption-content">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </header>
+      <article class="advantages">
+        <section class="advantage-first">
+          <div class="advantage-first-promo">
+            <h3>Настоящий городок</h3>
+            <span class="advantage-number"></span>
+            <p>Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="advantage-first-image">
+            <img src="img/town.jpg" alt="Фотография городка" width="800" height="256">
+          </div>
+        </section>
+        <section class="advantage-icons">
+          <ul class="advantage-list">
+            <li class="advantage_home">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantage_food">
+              <h3>Еда</h3>
+              <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantage_souvenir">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </section>
+        <section class="advantage-second">
+          <div class="advantage-second-promo">
+            <h3>Там есть мост дьявола</h3>
+            <span class="advantage-number">№2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="advantage-second-image">
+            <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          </div>
+        </section>
+        <section class="advantage-else">
+          <ul class="advantage-else-list">
+            <li class="advantage-else-item">
+              <h3>Небольшая площадь</h3>
+              <span>№3</span>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantage-else-item">
+              <h3>Красивая дорога</h3>
+              <span>№4</span>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantage-else-item">
+              <h3>Мало туристов</h3>
+              <span>№5</span>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <section class="hotels">
+        <b>Заинтересовались?</b>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="map-canvas">
+          Интерактивная карта
+        </div>
+        <div class="hotel-search">
+          <form action="/echo" method="post">
+            <div class="search-form">
+              <label for="arrival-date">Дата заеда:</label>
+              <input type="text" class="arrival-date" id="arrival-date">
+              <button type="button" class="calendar-form">Календарь</button>
+            </div>
+            <div class="search-form">
+              <label for="arrival-leave">Дата выезда:</label>
+              <input type="text" class="arrival-leave" id="arrival-leave">
+              <button type="button" class="calendar-form">Календарь</button>
+            </div>
+            <div class="search-form">
+              <label for="adults">Взрослые:</label>
+              <input class="number-field" type="text" id="adults" value="2">
+              <div class="number">
+                <button class="number-btn number-btn-plus">+</button>
+                <button class="number-btn number-btn-minus">-</button>
+              </div>
+            </div>
+            <div class="search-form">
+              <label for="childs">Дети:</label>
+              <input class="number-field" type="text" id="childs">
+              <div class="number">
+                <button class="number-btn number-btn-plus">+</button>
+                <button class="number-btn number-btn-minus">-</button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    <main>
+    <footer class="page-footer">
+      <h3 class>
+        <a href="#">#VISITSEDONA</a>
+      </h3>
+      <div class="social">
+        <a class="social-btn social-btn-tw" href="#">twitter</a>
+        <a class="social-btn social-btn-fb" href="#">facebook</a>
+        <a class="social-btn social-btn-yt" href="#">youtube</a>
+      </div>
+      <div class="copyright">
+        <b>Website by:</b>
+        <a class="copyright-link" href="#">
+          <img src="img/logo_name.png" alt="Сайт HTM Academy" width="115" height="41">
+        </a>
+      </div>
+    </footer>
+  <body>
+</html>
