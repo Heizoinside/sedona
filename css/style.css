@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333;
+  text-transform: uppercase;
+  background-color:f2f2f2;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+height: auto;
+}
+.main-navigation {
+  background-color: #ffffff;
+}
+.main-navigation-list {
+  list-style: none;
+}
+.main-navigation a {
+  color: #000000;
+  font-weight: bold;
+}
+.caption {
+  text-align:center;
+}
+.primary h3 {
+  font-size: 21px;
+}
+.advantage {
+  background-color: #ffffff;
+}
+.advantage-list {
+  list-style: none;
+}
+.advantage-list h3 {
+  font-size:21px;
+  line-height: 21px;
+}
+.advantage-list p,
+.advantage-list span {
+  line-height:21px;
+}
+
+.advantage-item {
+  text-align: center;
+}
+.advantage-item:first-child,
+.advantage-item:nth-child(2)
+ {
+  color:#ffffff;
+  background-color:#81b3d2;
+}
+.advantage-item-sub-list {
+  list-style:none;
+}
+.hotels-search h4 {
+  font-size:30px;
+  line-height: 36px;
+}
+.hotels-search-form {
+  width: 568px;
+  height: 481px;
+}
+.search-open-btn {
+  width:100%;
+  background-color:#766357;
+  color:#fff;
+  font-size:21px;
+  border:none;
+}
+.search-open-btn:hover {
+  background-color: #604e43;
+}
+.search-open-btn:active,
+.search-open-btn:focus {
+  background-color: #503e33;
+  color: #857871;
+  outline:none;
+}
+.search-item input {
+  font:inherit;
+  border:none;
+  background-color:#f2f2f2;
+}
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+.search-item input:active,
+.search-item input:focus {
+  background-color: #ffffff;
+  border:2px solid #e5e5e5;
+  outline:none;
+
+}
+.search-list {
+  list-style: none;
+}
+.button-find {
+  background-color:#81b3d2;
+  color:#fff;
+}
+.button-find:hover {
+  background-color: #669ec0;
+}
+.button-find:active,
+.button-find:focus {
+  background-color: #5496bc;
+  color:#88b6d1;
+}
+.page-footer{
+  background-color: #f9fbf6;
+}
+.visit-link a {
+  font:inherit;
+  color: #000000;
+  font-size:21px;
+}
+.footer-social {
+  text-align:center;
+}
+.social-btn {
+  color:#333333;
+}

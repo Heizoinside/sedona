@@ -11,7 +11,7 @@
             <li class="main-navigation-item"><a href="index.html" class="active">Информация</a></li>
             <li class="main-navigation-item"><a href="#">Фото и видео</a></li>
             <li class="main-navigation-logo">
-              <img src="img/logo.png" alt="Логотип штата Сетона">
+              <img src="img/logo.png" alt="Логотип штата Седона">
             </li>
             <li class="main-navigation-item"><a href="map.html">Карта штата</a></li>
             <li class="main-navigation-item"><a href="" >Гостинницы</a></li>
@@ -19,57 +19,67 @@
         </nav>
     </header>
     <main>
-      <h1 class=visually-hidden>Отели Седоны</h1>
+      <h1 class=visually-hidden>Каталог отелей Седоны</h1>
          <section class="forms-block">
            <h2 class=visually-hidden>Форма поиска отелей:</h2>
            <form action="/echo" method="post">
              <fieldset class="structure">
                <legend>Инфраструктура:</legend>
-
-               <input type="checkbox" id="form1" checked>
-               <label for="form1">Бассейн</label>
-
-               <input type="checkbox" id="form2">
-               <label for="form2">Парковка</label>
-
-               <input type="checkbox" id="form3">
-               <label for="form3">Wi-fi</label>
-
+               <ul>
+                 <li>
+                   <input type="checkbox" id="form1" checked>
+                   <label for="form1">Бассейн</label>
+                 </li>
+                 <li>
+                   <input type="checkbox" id="form2">
+                   <label for="form2">Парковка</label>
+                 </li>
+                 <li>
+                   <input type="checkbox" id="form3">
+                   <label for="form3">Wi-fi</label>
+                 </li>
+               </ul>
              </fieldset>
              <fieldset class="digs">
                <legend></legend>
-
-               <input type="checkbox" id="form4">
-               <label for="form4">Гостинница</label>
-
-               <input type="checkbox" id="form5">
-               <label for="form5">Мотель</label>
-
-               <input type="checkbox" id="form6">
-               <label for="form6">Аппартаменты</label>
+               <ul>
+                 <li>
+                   <input type="checkbox" id="form4">
+                   <label for="form4">Гостинница</label>
+                 </li>
+                 <li>
+                   <input type="checkbox" id="form5">
+                   <label for="form5">Мотель</label>
+                 </li>
+                 <li>
+                   <input type="checkbox" id="form6">
+                   <label for="form6">Аппартаменты</label>
+                 </li>
+               </ul>
             </fieldset>
             <fieldset class="price-form">
               <legend>Стоимость в сутки (Р):</legend>
               <div class="range">
-                <div class="range-fields">
-                  <div class="range-field">
+                <ul class="range-fields">
+                  <li class="range-field">
                     <label for="range1">От</label>
                     <input type="text" id="range1">
-                  </div>
-                  <div class="range-field"></div>
+                  </li>
+                  <li class="range-field">
                   <label for="range2">До</label>
                   <input type="text" id="range2">
-                </div>
-              </div>
-              <div class="range-bar">
-                <div class="range-scale">Шкала</div>
-                <button class="range-btn range-btn-from">От</button>
-                <button class="range-btn range-btn-to">До</button>
-              </div>
-              <button class="btn btn-transparent" type="submit">Показать</button>
-            </fieldset>
-           </form>
-          </section>
+                </li>
+              </ul>
+            </div>
+            <p class="range-bar">
+              <span class="range-scale">Шкала</span>
+              <button class="range-btn range-btn-from">От</button>
+              <button class="range-btn range-btn-to">До</button>
+            </p>
+            <button class="btn btn-transparent" type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
      <div class="hotels-sort">
        <ul class="hotels-sort-list">
          <li class="hotels-sort-item find">
@@ -108,52 +118,54 @@
        </ul>
      </div>
      <section class="hotels">
-       <h2 class=visually-hidden>Описание отелей:</h2>
-       <div class="hotel-image">
-         <img src="#" alt="#" width="135" height="90">
+       <h2 class="visually-hidden">Список доступных отелей</h2>
+       <div class="hotel">
+          <div class="hotel-image">
+            <img src="#" alt="#" width="135" height="90">
+          </div>
+          <div class="hotel-content">
+            <h3>Amara resort & spa</h3>
+            <b>Гостинница</b>
+            <b>От 4000 Р.</b>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <span class="hotel-stars hotel-stars-five">5 звёзд</span>
+            <b class="rating">Рейтинг 8.5</b>
+          </div>
        </div>
-       <div class="hotel-content">
-         <h3>Amara resort & spa</h3>
-         <span>Гостинница</span>
-         <span>От 4000 Р.</span>
-         <a href="#" class="btn btn-blue">Подробнее</a>
-         <a href="#" class="btn btn-brown">Забронировать</a>
+       <div class="hotel">
+          <div class="hotel-image">
+            <img src="#" alt="#" width="135" height="90">
+          </div>
+          <div class="hotel-content">
+            <h3>Desert quail inn</h3>
+            <b>Мотель</b>
+            <b>От 3000 Р.</b>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <span class="hotel-stars hotel-stars-three">3 звёзды</span>
+            <b class="rating">Рейтинг 8.9</b>
+          </div>
        </div>
-       <div class="hotel-rating">
-         <div class="hotel-stars hotel-stars-five">5 звёзд</div>
-         <div class="rating">Рейтинг 8.5</div>
-       </div>
-     </section>
-     <section class="hotels">
-       <div class="hotel-image">
-         <img src="#" alt="#" width="135" height="90">
-       </div>
-       <div class="hotel-content">
-         <h3>Desert quail inn</h3>
-         <span>Мотель</span>
-         <span>От 3000 Р.</span>
-         <a href="#" class="btn btn-blue">Подробнее</a>
-         <a href="#" class="btn btn-brown">Забронировать</a>
-       </div>
-       <div class="hotel-rating">
-         <div class="hotel-stars hotel-stars-three">3 звёзды</div>
-         <div class="rating">Рейтинг 8.9</div>
-       </div>
-     </section>
-     <section class="hotels">
-       <div class="hotel-image">
-         <img src="#" alt="#" width="135" height="90">
-       </div>
-       <div class="hotel-content">
-         <h3>Villas at poco diablo</h3>
-         <span>Аппартаменты</span>
-         <span>От 2000 Р.</span>
-         <a href="#" class="btn btn-blue">Подробнее</a>
-         <a href="#" class="btn btn-brown">Забронировать</a>
-       </div>
-       <div class="hotel-rating">
-         <div class="hotel-stars hotel-stars-two">2 звёзды</div>
-         <div class="rating">Рейтинг 9.2</div>
+       <div class="hotel">
+          <div class="hotel-image">
+            <img src="#" alt="#" width="135" height="90">
+          </div>
+          <div class="hotel-content">
+            <h3>Villas at poco diablo</h3>
+            <b>Аппартаменты</b>
+            <b>От 2000 Р.</b>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <span class="hotel-stars hotel-stars-two">2 звёзды</span>
+            <b class="rating">Рейтинг 9.2</b>
+          </div>
        </div>
      </section>
     </main>
