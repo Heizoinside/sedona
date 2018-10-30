@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -14,7 +16,7 @@
               <img src="img/logo.png" alt="Логотип штата Седона">
             </li>
             <li class="main-navigation-item"><a href="map.html">Карта штата</a></li>
-            <li class="main-navigation-item"><a href="" >Гостинницы</a></li>
+            <li class="main-navigation-item navigation-item-active"><a href="" >Гостинницы</a></li>
           </ul>
         </nav>
     </header>
@@ -24,50 +26,50 @@
            <h2 class=visually-hidden>Форма поиска отелей:</h2>
            <form action="/echo" method="post">
              <fieldset class="structure">
-               <legend>Инфраструктура:</legend>
-               <ul>
+               <legend class="form-caption">Инфраструктура:</legend>
+               <ul class="structure-list">
                  <li>
-                   <input type="checkbox" id="form1" checked>
+                   <input type="checkbox" id="form1" name="pool" checked>
                    <label for="form1">Бассейн</label>
                  </li>
                  <li>
-                   <input type="checkbox" id="form2">
+                   <input type="checkbox" id="form2" name="parking">
                    <label for="form2">Парковка</label>
                  </li>
                  <li>
-                   <input type="checkbox" id="form3">
+                   <input type="checkbox" id="form3" name="wifi">
                    <label for="form3">Wi-fi</label>
                  </li>
                </ul>
              </fieldset>
              <fieldset class="digs">
-               <legend></legend>
-               <ul>
+               <legend class="form-caption">Тип жилья:</legend>
+               <ul class="structure-list">
                  <li>
-                   <input type="checkbox" id="form4">
+                   <input type="checkbox" id="form4" name="hotel">
                    <label for="form4">Гостинница</label>
                  </li>
                  <li>
-                   <input type="checkbox" id="form5">
+                   <input type="checkbox" id="form5" name="motel">
                    <label for="form5">Мотель</label>
                  </li>
                  <li>
-                   <input type="checkbox" id="form6">
+                   <input type="checkbox" id="form6" name="appartment">
                    <label for="form6">Аппартаменты</label>
                  </li>
                </ul>
             </fieldset>
             <fieldset class="price-form">
-              <legend>Стоимость в сутки (Р):</legend>
+              <legend class="form-caption">Стоимость в сутки (Р):</legend>
               <div class="range">
                 <ul class="range-fields">
                   <li class="range-field">
                     <label for="range1">От</label>
-                    <input type="text" id="range1">
+                    <input type="text" id="range1" name="from">
                   </li>
                   <li class="range-field">
                   <label for="range2">До</label>
-                  <input type="text" id="range2">
+                  <input type="text" id="range2" name="to">
                 </li>
               </ul>
             </div>
