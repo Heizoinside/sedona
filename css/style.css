@@ -155,7 +155,7 @@ fieldset {
 .form-caption {
   font-weight: bold;
 }
-.hotels-sort-item {
+.hotels-sort-list {
   font-size:12px;
   line-height: 18px;
   list-style:none;
@@ -171,4 +171,25 @@ fieldset {
 .sort-item-link.active {
   border:none;
   color: #81b3d2;
+}
+.hotel-list {
+  list-style:none;
+}
+.hotel h3 {
+  font-size: 21px;
+}
+.hotel span {
+  line-height:21px;
+}
+.btn {
+  font-size:14px;
+  line-height:21px;
+  color:#ffffff;
+
+}
+.btn.btn-blue {
+  background-color: #81b3d2;
+}
+.btn.btn-brown {
+  background-color: #766357;
 }
