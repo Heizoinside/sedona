@@ -25,12 +25,21 @@ height: auto;
 .main-navigation {
   background-color: #ffffff;
 }
-.main-navigation-list {
-  list-style: none;
-}
-.main-navigation a {
+.main-navigation-link {
   color: #000000;
   font-weight: bold;
+}
+.main-navigation-link:hover {
+   color:#81b3d2;
+ }
+.main-navigation-link:active {
+  color:#b2b2b2;
+}
+.main-navigation-link.active {
+    color:#766357;
+}
+.main-navigation-list {
+  list-style: none;
 }
 .advantage {
   background-color: #ffffff;
@@ -128,9 +137,6 @@ height: auto;
 .social-btn {
   color:#333333;
 }
-.navigation-item-active a {
-  color:#766357;
-}
 .structure-list {
   list-style:none;
 }
@@ -172,11 +178,26 @@ fieldset {
   border:none;
   color: #81b3d2;
 }
+.sort-item-link:hover {
+  color: #81b3d2;
+}
+.sort-item-link:active {
+  color: #000000;
+  border:none;
+}
 .hotel-list {
   list-style:none;
+
 }
-.hotel h3 {
+.hotel-name {
   font-size: 21px;
+  color: #000000;
+}
+.hotel-name:hover {
+  color:#81b3d2;
+}
+.hotel-name:active {
+  color:#b2b2b2;
 }
 .hotel span {
   line-height:21px;
@@ -190,6 +211,20 @@ fieldset {
 .btn.btn-blue {
   background-color: #81b3d2;
 }
+.btn.btn-blue:hover {
+  background-color: #669ec0;
+}
+.btn.btn-blue:active {
+  background-color: #5496bd;
+  color:#88b6d1;
+}
 .btn.btn-brown {
   background-color: #766357;
+}
+.btn.btn-brown:hover {
+  background-color: #604e43;
+}
+.btn.btn-brown:active {
+  background-color: #503e33;
+  color:#857871;
 }
