@@ -202,6 +202,10 @@ fieldset {
 .hotel span {
   line-height:21px;
 }
+.rating {
+  background-color:#f2f2f2;
+  color:#666666;
+}
 .btn {
   font-size:14px;
   line-height:21px;
