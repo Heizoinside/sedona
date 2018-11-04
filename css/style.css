@@ -22,8 +22,7 @@ a {
 .container {
   position: relative;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto;
   background-color: #fff;
 }
 .main-navigation {
@@ -402,7 +401,9 @@ fieldset {
   list-style:none;
   display: flex;
   flex-direction: column;
-
+}
+.hotels {
+  margin-bottom: 67px;
 }
 .hotel-name {
   font-size: 21px;
