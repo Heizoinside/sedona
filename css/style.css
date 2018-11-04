@@ -314,16 +314,43 @@ a {
 .social-btn {
   color:#333333;
 }
+.catalog {
+  margin:0 auto;
+}
 .structure-list {
   list-style:none;
 }
 fieldset {
   border: none;
   color: #ffffff;
+  margin-left:50px;
+
+}
+.forms-section {
+  margin-bottom: 32px;
+
 }
 .forms-block {
   background-image: url(../img/background-input.jpg);
   background-repeat: no-repeat;
+  width:auto;
+  min-height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+}
+.structure-list {
+  padding: 0;
+  margin: 0;
+}
+.structure,
+.digs,
+.price-form  {
+  flex-basis:300px;
+
 }
 .range-fields {
   list-style:none;
@@ -338,10 +365,18 @@ fieldset {
 .form-caption {
   font-weight: bold;
 }
+.hotels-sort {
+  margin-bottom: 30px;
+}
 .hotels-sort-list {
   font-size:12px;
   line-height: 18px;
   list-style:none;
+  display: flex;
+  justify-content: flex-start;
+}
+.hotels-sort-item {
+  margin-right: 40px;
 }
 .hotels-sort-item.find {
   font-size:21px;
@@ -361,9 +396,12 @@ fieldset {
 .sort-item-link:active {
   color: #000000;
   border:none;
+
 }
 .hotel-list {
   list-style:none;
+  display: flex;
+  flex-direction: column;
 
 }
 .hotel-name {

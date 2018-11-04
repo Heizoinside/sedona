@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header>
     <nav class="main-navigation">
       <ul class="main-navigation-list">
@@ -22,11 +23,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="catalog">
     <h1 class=visually-hidden>Каталог отелей Седоны</h1>
-    <section class="forms-block">
+    <section class="forms-section">
       <h2 class=visually-hidden>Форма поиска отелей:</h2>
-      <form action="/echo" method="post">
+      <form class="forms-block" action="/echo" method="post">
         <fieldset class="structure">
           <legend class="form-caption">Инфраструктура:</legend>
           <ul class="structure-list">
@@ -109,14 +110,10 @@
         </li>
         <li>
           <a href="#" class="hotel-sort-link">
-            <svg>
 
-            </svg>
           </a>
           <a href="#" class="hotel-sort-link">
-            <svg>
 
-            </svg>
           </a>
         </li>
       </ul>
@@ -196,6 +193,7 @@
       </a>
     </div>
   </footer>
+</div>
 </body>
 
 </html>
