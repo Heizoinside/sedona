@@ -53,6 +53,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top:14px;
+  flex-wrap: nowrap;
 }
 .link-group-1 {
   display:flex;
@@ -60,11 +61,10 @@ img {
   justify-content: space-between;
   margin-left: 57px;
   flex-wrap: wrap;
-  text-align: left;
+  align-self: flex-end;
 }
 .link-group-1 a {
   flex-basis: 114px;
-  text-align: center;
 }
 .link-group-2 {
   display:flex;
@@ -72,7 +72,7 @@ img {
   justify-content: space-between;
   margin-right: 54px;
   flex-wrap: wrap;
-  text-align: right;
+  align-self: flex-start;
 }
 .link-group-2 a {
   flex-basis: 114px;
