@@ -35,7 +35,7 @@ img {
 }
 .main-navigation {
   position: relative;
-  height: 57px;
+  min-height: 57px;
   z-index: 1;
   background: #fff;
 
@@ -48,8 +48,6 @@ img {
    width:140px;
 }
 .navigation-menu {
-  margin:0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   padding-top:14px;
@@ -59,12 +57,12 @@ img {
   display:flex;
   width: 360px;
   justify-content: space-between;
-  margin-left: 57px;
+  margin-left: 60px;
   flex-wrap: wrap;
-  align-self: flex-end;
 }
 .link-group-1 a {
   flex-basis: 114px;
+  text-align: center;
 }
 .link-group-2 {
   display:flex;
@@ -72,7 +70,6 @@ img {
   justify-content: space-between;
   margin-right: 54px;
   flex-wrap: wrap;
-  align-self: flex-start;
 }
 .link-group-2 a {
   flex-basis: 114px;
