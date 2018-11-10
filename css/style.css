@@ -38,6 +38,7 @@ img {
   min-height: 55px;
   z-index: 1;
   background: #fff;
+
 }
 .main-navigation-logo {
   position:absolute;
@@ -68,7 +69,7 @@ img {
 }
 
 .main-navigation-menu li {
-  flex-basis:140px;
+  flex-basis:100px;
   padding: 15px 0;
 }
 .main-navigation-menu li:first-child {
