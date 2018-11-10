@@ -282,7 +282,7 @@ img {
   color: #000000;
 }
 .map-wrapper {
-  min-height: 592px;
+  min-height: 472px;
   background-color: #aaaaaa;
   background-image: url(../img/map.jpg);
 
@@ -430,30 +430,63 @@ img {
   color:#88b6d1;
 
 }
-.page-footer{
+.page-footer {
   background-color: #f9fbf6;
   display: flex;
   justify-content: space-around;
-  margin-top:10px;
+  margin-top: 20px;
   min-height: 120px;
 
 
 }
 .footer-item {
-  flex-basis: 140px;
-
-
+  flex-basis: 200px;
+}
+.copyright {
+  margin-top:20px;
+  position: relative;
+  left:8px;
+}
+.copyright-link {
+  position: absolute;
+  right:2px;
+  top:-14px;
+}
+.copyright-link:hover path,
+.copyright-link:focus path {
+  fill:#81b3d2;
+}
+.copyright-link path:active {
+  fill:#bdbbbc;
 }
 .visit-link a {
   font:inherit;
   color: #000000;
   font-size:21px;
+  margin-left: 28px;
 }
 .footer-social {
   text-align:center;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top:10px;
+  margin-left:5px;
 }
 .social-btn {
   color:#333333;
+  width:47px;
+  height:48px;
+  background-color:#81b3d2;
+  margin-right: 6px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-btn:hover {
+  background-color: #669ec0;
+}
+.social-btn:hover path {
+  opacity: 0.3;
 }
 .catalog {
   margin:0 auto;
