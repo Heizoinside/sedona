@@ -64,13 +64,14 @@ img {
 .main-navigation-menu {
   list-style: none;
   display:flex;
-  margin:0;
-  padding:0;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-navigation-menu li {
-  flex-basis:100px;
+  width:25%;
   padding: 15px 0;
 }
 .main-navigation-menu li:first-child {
