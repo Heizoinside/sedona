@@ -60,6 +60,7 @@ img {
   justify-content: space-between;
   margin-left: 57px;
   flex-wrap: wrap;
+  text-align: left;
 }
 .link-group-1 a {
   flex-basis: 114px;
@@ -71,6 +72,7 @@ img {
   justify-content: space-between;
   margin-right: 54px;
   flex-wrap: wrap;
+  text-align: right;
 }
 .link-group-2 a {
   flex-basis: 114px;
