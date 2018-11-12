@@ -43,7 +43,7 @@ img {
 .main-navigation-logo {
   position:absolute;
    left:50%;
-   margin-left:-70px;
+   margin-left:-69px;
    z-index:1;
    width:140px;
 }
@@ -62,7 +62,6 @@ img {
 }
 .navigation-menu {
   display: flex;
-  justify-content: space-between;
   padding-top:14px;
   flex-wrap: nowrap;
 }
@@ -83,6 +82,7 @@ img {
   justify-content: space-between;
   margin-right: 54px;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 .link-group-2 a {
   flex-basis: 114px;
@@ -353,12 +353,23 @@ img {
 }
 .calendar {
   position: absolute;
-  background: url("../img/calendar.svg") no-repeat;
   width:35px;
   height: 35px;
   border:none;
   right:0;
-  top:10px;
+  top:3px;
+}
+.calendar path {
+  fill:#cacaca;
+}
+.calendar:hover path {
+  fill:#000000;
+}
+.calendar:active path,
+.calendar:focus path
+ {
+  fill:#81b3d2;
+  outline:none;
 }
 .amount-container {
   display:flex;
@@ -498,9 +509,7 @@ img {
 }
 .catalog {
   margin:0 auto;
-}
-.structure-list {
-  list-style:none;
+
 }
 fieldset {
   border: none;
@@ -524,10 +533,55 @@ fieldset {
   margin-left:auto;
   margin-right: 50px;
 }
+.form-caption {
+  padding-bottom: 20px;
+  font-size:16px;
+  font-weight: bold;
+}
 .structure-list {
   padding: 0;
   margin: 0;
-
+  list-style:none;
+}
+.structure-list li {
+  margin-bottom:15px;
+  padding: 0;
+}
+.interface-checkbox {
+  position:relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.interface-checkbox input[type="checkbox"] ~ .checkbox-indicator {
+  position:absolute;
+  top:0;
+  left:0;
+  width:20px;
+  height:19px;
+  border: 2px solid #ffffff;
+  border-radius:2px;
+}.interface-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+}
+.interface-checkbox input[type="checkbox"]:checked + .checkbox-indicator:before {
+  content: "";
+  width:10px;
+  height:4px;
+  background-color: #fff;
+  position: absolute;
+  transform:rotate(45deg);
+  top:7px;
+  left:2px;
+}
+.interface-checkbox input[type="checkbox"]:checked + .checkbox-indicator:after {
+  content: "";
+  width:20px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  top:6px;
+  left:7px;
 }
 .range-fields {
   list-style:none;

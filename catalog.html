@@ -17,12 +17,12 @@
         </a>
         <div class="navigation-menu">
           <div class="link-group-1">
-            <a href="index.html" class="main-navigation-link active">Информация</a>
+            <a href="index.html" class="main-navigation-link">Информация</a>
             <a href="#" class="main-navigation-link">Фото и видео</a>
           </div>
           <div class="link-group-2">
             <a href="map.html" class="main-navigation-link">Карта штата</a>
-            <a href="catalog.html" class="main-navigation-link">Гостиницы</a>
+            <a class="main-navigation-link active">Гостиницы</a>
           </div>
         </div>
       </nav>
@@ -37,16 +37,25 @@
             <legend class="form-caption">Инфраструктура:</legend>
             <ul class="structure-list">
               <li>
-                <input type="checkbox" id="form1" name="pool" checked>
-                <label for="form1">Бассейн</label>
+                <label class="interface-checkbox">
+                  <input class="visually-hidden" type="checkbox"  name="pool" checked>
+                  <span class="checkbox-indicator"></span>
+                  Бассейн
+                </label>
               </li>
               <li>
-                <input type="checkbox" id="form2" name="parking">
-                <label for="form2">Парковка</label>
+                <label class="interface-checkbox">
+                  <input type="checkbox" name="parking" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Парковка
+                </label>
               </li>
               <li>
-                <input type="checkbox" id="form3" name="wifi">
-                <label for="form3">Wi-fi</label>
+                <label class="interface-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="wifi">
+                  <span class="checkbox-indicator"></span>
+                  Wi-fi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -56,16 +65,25 @@
             <legend class="form-caption">Тип жилья:</legend>
             <ul class="structure-list">
               <li>
-                <input type="checkbox" id="form4" name="hotel">
-                <label for="form4">Гостинница</label>
+                <label class="interface-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="hotel">
+                  <span class="checkbox-indicator"></span>
+                  Гостинница
+                </label>
               </li>
               <li>
-                <input type="checkbox" id="form5" name="motel">
-                <label for="form5">Мотель</label>
+                <label class="interface-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="motel">
+                  <span class="checkbox-indicator"></span>
+                  Мотель
+                </label>
               </li>
               <li>
-                <input type="checkbox" id="form6" name="appartment">
-                <label for="form6">Аппартаменты</label>
+                <label class="interface-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="appartment">
+                  <span class="checkbox-indicator"></span>
+                  Аппартаменты
+                </label>
               </li>
             </ul>
           </fieldset>
