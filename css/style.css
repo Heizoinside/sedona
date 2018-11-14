@@ -509,69 +509,81 @@ img {
 }
 .catalog {
   margin:0 auto;
-
 }
-fieldset {
-  border: none;
-  color: #ffffff;
-  margin-left:50px;
-
-}
-.forms-section {
-  margin-bottom: 32px;
-
-}
-.forms-block {
-  background-image: url(../img/background-input.jpg);
-  background-repeat: no-repeat;
-  width:auto;
-  min-height: 220px;
+.form-columns {
+    background-image: url(../img/background-input.jpg);
+    background-repeat: no-repeat;
+    width:auto;
+    min-height: 220px;
+    display: flex;
+    justify-content:space-between;
+  }
+.checkbox-columns {
   display:flex;
+  justify-content: space-between;
   align-items: center;
+  margin-left:2px;
 }
-.form-column-3 {
-  margin-left:auto;
-  margin-right: 50px;
+.checkbox-column {
+  width: 255px;
 }
-.form-caption {
-  padding-bottom: 20px;
-  font-size:16px;
-  font-weight: bold;
+.checkbox-column:first-child {
+  margin-left: 60px;
 }
 .structure-list {
   padding: 0;
   margin: 0;
   list-style:none;
+  margin-top:13px;
+
 }
 .structure-list li {
-  margin-bottom:15px;
+  padding:10px;
+}
+.range-column {
+  align-self:center;
+  margin-right:57px;
+}
+.form-caption {
+  margin-top:4px;
+  margin-left:7px;
+  font:inherit;
+  font-weight: bold;
+  font-size:16px;
+}
+.structure {
+  border: none;
+  color: #ffffff;
+  margin: 0;
   padding: 0;
+
 }
 .interface-checkbox {
   position:relative;
-  padding-left: 30px;
+  padding-left: 40px;
   cursor: pointer;
 }
 .interface-checkbox input[type="checkbox"] ~ .checkbox-indicator {
   position:absolute;
-  top:0;
+  top:-3px;
   left:0;
-  width:20px;
+  width:19px;
   height:19px;
   border: 2px solid #ffffff;
   border-radius:2px;
-}.interface-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+}
+.interface-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   outline: thin dotted;
 }
 .interface-checkbox input[type="checkbox"]:checked + .checkbox-indicator:before {
   content: "";
-  width:10px;
+  width:9px;
   height:4px;
   background-color: #fff;
   position: absolute;
   transform:rotate(45deg);
-  top:7px;
-  left:2px;
+  top:8px;
+  left:3px;
 }
 .interface-checkbox input[type="checkbox"]:checked + .checkbox-indicator:after {
   content: "";
@@ -583,8 +595,78 @@ fieldset {
   top:6px;
   left:7px;
 }
+.price-form {
+  border: none;
+  color: #ffffff;
+}
+.price-caption {
+  font:inherit;
+  font-weight: bold;
+  font-size:16px;
+  margin-bottom:5px;
+}
 .range-fields {
+  margin: 0;
+  padding:0;
+  width: 315px;
   list-style:none;
+  display: flex;
+  border: 2px solid #fff;
+  padding-bottom: 3px;
+  position: relative;
+  margin-top:-3px;
+}
+.range-field {
+  vertical-align: middle;;
+  margin-bottom: -1px;
+}
+.range-field:last-child {
+  margin-left:auto;
+  margin-right: 39px;
+}
+.range-field:first-child {
+  margin-left: 65px;
+}
+.range-field input {
+  background:transparent;
+  border:none;
+  width:40px;
+  color:#ffffff;
+  font:inherit;
+}
+.range-field:first-child::after {
+  content: "";
+  background-color: #fff;
+  height:22px;
+  width:2px;
+  position:absolute;
+  top:3px;
+  right:50%;
+}
+.range-bar {
+  width:317px;
+  height:2px;
+  background-color: #918381;
+  margin-top:20px;
+  margin-bottom:15px;
+  position:relative;
+
+}
+
+.range-btn {
+   position: absolute;
+   display:block;
+   top:-10px;
+   left: 0;
+   width: 4px;
+   height: 4px;
+   border: 8px solid #fff;
+   background-color: #ababab;
+   border-radius: 50%;
+   box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
+ }
+.range-btn-to {
+  left:80%;
 }
 .btn-transparent {
   background: transparent;
@@ -592,9 +674,12 @@ fieldset {
   color: #ffffff;
   font:inherit;
   text-transform: uppercase;
-}
-.form-caption {
-  font-weight: bold;
+  display: block;
+  padding:6px 33px;
+  margin-right: 50%;
+  margin-left: 85px;
+  margin-top:30px;
+
 }
 .hotels-sort {
   margin-bottom: 30px;
