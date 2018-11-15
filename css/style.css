@@ -675,31 +675,51 @@ img {
   font:inherit;
   text-transform: uppercase;
   display: block;
-  padding:6px 33px;
+  padding:3px 33px;
   margin-right: 50%;
   margin-left: 85px;
   margin-top:30px;
 
 }
 .hotels-sort {
-  margin-bottom: 30px;
+  padding-bottom: 32px;
+  margin-top:30px;
+  padding-left: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .hotels-sort-list {
+  margin: 0;
+  padding: 0;
   font-size:12px;
   line-height: 18px;
   list-style:none;
   display: flex;
   justify-content: flex-start;
 }
-.hotels-sort-item {
-  margin-right: 40px;
-}
-.hotels-sort-item.find {
+.hotels-sort-item-find {
   font-size:21px;
   color: black;
+  padding-left: 42px;
+}
+.hotels-sort-item:not(:nth-child(2)) {
+  padding-top: 3px;
+  padding-right:33px;
+
+
+}
+.hotels-sort-item:nth-child(2){
+  padding-left: 47px;
+  padding-right: 45px;
+  padding-top: 3px;
+  color:#000;
+}
+.hotels-sort-item-sorter {
+  margin-left:auto;
+  margin-right:75px;
+  padding-top:4px;
 }
 .sort-item-link  {
-  border-bottom: 2px dotted #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
   color: #b1b1b1;
 }
 .sort-item-link.active {
@@ -712,7 +732,21 @@ img {
 .sort-item-link:active {
   color: #000000;
   border:none;
-
+}
+.hotel-sort-link:first-child {
+  margin-right:8px;
+}
+.hotel-sort-link path {
+  fill:#cacaca;
+}
+.hotel-sort-link.active path {
+  fill:#81b3d2;
+}
+.hotel-sort-link:hover path {
+  fill:#231f20;
+}
+.hotel-sort-link:active path {
+  fill:#81b3d2
 }
 .hotel-list {
   list-style:none;
