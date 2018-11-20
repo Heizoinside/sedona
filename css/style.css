@@ -771,7 +771,15 @@ img {
   margin-top:20px;
   margin-bottom:15px;
   position:relative;
-
+}
+.range-bar::before {
+  content: "";
+  width:260px;
+  height:2px;
+  background-color: #ffffff;
+  top:0;
+  left:0;
+  position: absolute;
 }
 
 .range-btn {
