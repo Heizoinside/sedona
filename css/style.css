@@ -33,8 +33,9 @@ img {
 }
 .container {
   position:relative ;
-  max-width: 1200px;
+  width:1200px;
   margin:0 auto;
+  text-align:left;
   background-color: #fff;
    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
            box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
