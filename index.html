@@ -98,6 +98,10 @@
         </div>
         <button class="btn search-open-btn" type="button" name="search-open">Поиск гостиницы в Седоне</button>
         <div class="map-wrapper">
+          <div class="interactive-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418727.5625684363!2d-111.59604885970354!3d34.924345454386504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1542669759096" width="1200px" height="472px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <img src="img/map.jpg" alt="Интерактивная карта штата Седона" width="100%" height="472px" class="visually-hidden">
+          </div>
           <form class="search-form" action="/echo" method="post">
             <div class="input-container">
               <label class="search-label" for="arrival-date">Дата заезда:</label>
@@ -180,6 +184,14 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript">
+    var hotelsSearch = document.querySelector('.search-form');
+    var searchBtn = document.querySelector('.search-open-btn');
+    searchBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      hotelsSearch.classList.toggle('search-form-show');
+    });
+  </script>
 </body>
 
 </html>
