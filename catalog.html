@@ -90,29 +90,21 @@
       </fieldset>
     </div>
     </div>
-  <div class="form-column range-column">
-    <fieldset class="price-form">
-      <legend class="price-caption">Стоимость в сутки (Р):</legend>
-      <ul class="range-fields">
-        <li class="range-field">
-          <label for="range1">От</label>
-          <input type="text" id="range1" name="from" value="0">
-        </li>
-        <li class="range-field">
-          <label for="range2">До</label>
-          <input type="text" id="range2" name="to" value="3000">
-        </li>
-      </ul>
-      <div class="range-bar">
-        <label>
-          <span class="range-scale visually-hidden">Шкала от и до</span>
-          <span class="range-btn range-btn-from"></span>
-          <span class="range-btn range-btn-to"></span>
-        </label>
+    <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
-    </fieldset>
-  </div>
+    </div>
   </div>
 </form>
 </section>
@@ -206,6 +198,7 @@
         <span class="rating">Рейтинг: 9.2</span>
       </div>
     </li>
+  </ul>
 </section>
 </main>
 <footer class="page-footer footer-wrapper">
